@@ -1,0 +1,25 @@
+*,
+*::before, 
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    border: solid 20px #fff;
+    background-color: rgb(17, 124, 71);
+    height: 100vh;
+}
+
+html {
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+    font-size: 4rem;
+    margin: 100px auto;
+}

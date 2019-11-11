@@ -1,0 +1,18 @@
+{
+  "name": "starter-kit",
+  "version": "1.0.0",
+  "description": "Starter kit webpack configuration",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "nodemon --watch webpack.config.js --exec \"webpack\"",
+    "build": "webpack"
+  },
+  "author": "Krzysztof Grudzień",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.19.4",
+    "webpack": "^3.12.0"
+  }
+}

@@ -1,0 +1,27 @@
+{
+    "presets": [
+        [
+            "env",
+            {
+                "targets": {
+                    "debug": true,
+                    "browsers": [
+                        "last 4 version",
+                        " > 1%",
+                        "not dead"
+                    ]
+                }
+            }
+        ]
+    ],
+    "plugins": [
+        [
+            "transform-runtime",
+            {
+                "helpers": true,
+                "polyfill": true,
+                "regenerator": true
+            }
+        ]
+    ]
+}

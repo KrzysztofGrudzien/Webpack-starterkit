@@ -4,6 +4,7 @@
             "env",
             {
                 "targets": {
+                    "debug": true,
                     "browsers": [
                         "last 4 version",
                         " > 1%",
@@ -13,4 +14,14 @@
             }
         ]
     ],
+    "plugins": [
+        [
+            "transform-runtime",
+            {
+                "helpers": true,
+                "polyfill": true,
+                "regenerator": true
+            }
+        ]
+    ]
 }

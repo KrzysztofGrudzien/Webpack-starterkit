@@ -12,6 +12,8 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
     "nodemon": "^1.19.4",
     "webpack": "^3.12.0"
   }

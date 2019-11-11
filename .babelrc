@@ -1,0 +1,16 @@
+{
+    "presets": [
+        [
+            "env",
+            {
+                "targets": {
+                    "browsers": [
+                        "last 4 version",
+                        " > 1%",
+                        "not dead"
+                    ]
+                }
+            }
+        ]
+    ],
+}

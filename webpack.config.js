@@ -48,7 +48,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new extractTextPlugin('style.css')
+        new extractTextPlugin('css/style.css')
     ]
 }
 

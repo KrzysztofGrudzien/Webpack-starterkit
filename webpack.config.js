@@ -19,12 +19,22 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: extractTextPlugin.extract({
-                    use: {
-                        loader: 'css-loader',
-                        options: {
-                            sourceMap: true
+                    use: [
+                        {
+                            loader: 'css-loader',
+                            options: {
+                                sourceMap: true
+                            }
+                        },
+                        {
+                            loader: 'postcss-loader',
+                            options: {
+                                plugins: (loader) => [
+                                    new require('autoprefixer')()
+                                ]
+                            }
                         }
-                    }
+                    ]
                 })
             }
         ]

@@ -10,6 +10,7 @@ body {
     border: solid 20px #fff;
     background-color: rgb(17, 124, 71);
     height: 100vh;
+    display: flex;
 }
 
 html {

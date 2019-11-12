@@ -2,24 +2,33 @@
   "name": "starter-kit",
   "version": "1.0.0",
   "description": "Starter kit webpack configuration",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "test",
-    "start": "nodemon --watch webpack.config.js --watch .babelrc --exec \"webpack\"",
+    "start": "nodemon --watch webpack.config.js --watch .babelrc --watch .browserslistrc --exec \"webpack\"",
     "build": "webpack"
   },
   "author": "Krzysztof Grudzień",
   "license": "ISC",
   "dependencies": {
-    "babel-runtime": "^6.26.0"
+    "babel-runtime": "^6.26.0",
+    "sass": "^1.23.3"
   },
   "devDependencies": {
+    "autoprefixer": "^9.7.1",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^3.2.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "node-sass": "^4.13.0",
     "nodemon": "^1.19.4",
+    "postcss": "^7.0.21",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.3.1",
+    "style-loader": "^1.0.0",
     "webpack": "^3.12.0"
   }
 }

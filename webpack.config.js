@@ -17,8 +17,9 @@ module.exports = {
                 use: 'babel-loader'
             },
             {
-                test: /\.css$/,
+                test: /\.(sa|sc|c|)ss$/,
                 use: extractTextPlugin.extract({
+                    fallback: 'style-loader',
                     use: [
                         {
                             loader: 'css-loader',
@@ -33,7 +34,14 @@ module.exports = {
                                     new require('autoprefixer')()
                                 ]
                             }
+                        },
+                        {
+                            loader: 'sass-loader',
+                            options: {
+                                sourceMap: true
+                            }
                         }
+
                     ]
                 })
             }

@@ -14,6 +14,13 @@ Basic webpack configuration
 -  ✔ .babelrc - settings for JavaScript - more information -> [.babelrc](https://babeljs.io/docs/en/configuration#babelrc)
 -  ✔ .browserslistrc - settings of browsers support for the project - more information -> [.browserslistrc](https://github.com/browserslist/browserslist)
 
+## Future features:
+1. Optimization
+2. React settings
+3. Developer server
+4. Browser sync
+5. Developer vs Production version
+
 ## How to use starter-kit?
 1. Clone repository to your computer
 2. Put the files in your project folder
@@ -22,3 +29,5 @@ Basic webpack configuration
    
 ## WARNING:  
 PLEASE - don't update npm packages. All settings will be updated and developed by me.
+
+## TO BE CONTINUED ...

@@ -20,7 +20,7 @@ module.exports = {
                 test: /\.(sa|sc|c|)ss$/,
                 use: extractTextPlugin.extract({
                     fallback: 'style-loader',
-                    publicPath: './..',
+                    publicPath: './../',
                     use: [
                         {
                             loader: 'css-loader',

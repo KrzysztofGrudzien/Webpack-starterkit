@@ -15,7 +15,7 @@ body {
     border: solid 20px $white;
     background-color: rgb(17, 124, 71);
     color: $white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 100vh;
 }
 
@@ -29,9 +29,14 @@ body {
     &__header {
         color: #fff;
         font-size: 4rem;
+        font-weight: 700;
         margin: 50px auto;
         text-transform: uppercase;
         text-align: center;
+
+        &--light {
+            font-weight: 100;
+        }
 
         @media (max-width: 600px){
             font-size: 2rem;

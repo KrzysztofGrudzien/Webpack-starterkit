@@ -21,4 +21,4 @@ Basic webpack configuration
 4. If you want to run webpack write in the console - npm run start
    
 ## WARNING:  
-PLEASE - don't update npm packages. All settings will be update and develope for me.
+PLEASE - don't update npm packages. All settings will be updated and developed by me.

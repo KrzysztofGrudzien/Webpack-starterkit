@@ -20,11 +20,13 @@ module.exports = {
                 test: /\.(sa|sc|c|)ss$/,
                 use: extractTextPlugin.extract({
                     fallback: 'style-loader',
+                    publicPath: './..',
                     use: [
                         {
                             loader: 'css-loader',
                             options: {
-                                sourceMap: true
+                                sourceMap: true,
+                                url: true
                             }
                         },
                         {
@@ -36,6 +38,12 @@ module.exports = {
                             }
                         },
                         {
+                            loader: 'resolve-url-loader',
+                            options: {
+                                sourceMap: true
+                            }
+                        },
+                        {
                             loader: 'sass-loader',
                             options: {
                                 sourceMap: true
@@ -44,6 +52,15 @@ module.exports = {
 
                     ]
                 })
+            },
+            {
+                test: /\.(png|jpg|jpeg|gif|svg)$/,
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        name: 'assets/images/[name].[ext]'
+                    }
+                }
             }
         ]
     },

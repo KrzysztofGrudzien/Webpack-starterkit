@@ -1,0 +1,23 @@
+{
+  "name": "webpack starter-kit",
+  "version": "2.0.0",
+  "description": "webpack starter-kit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KrzysztofGrudzien/Webpack-starterkit.git"
+  },
+  "author": "Krzysztof Grudzień",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KrzysztofGrudzien/Webpack-starterkit/issues"
+  },
+  "homepage": "https://github.com/KrzysztofGrudzien/Webpack-starterkit#readme",
+  "devDependencies": {
+    "webpack": "^4.41.3",
+    "webpack-cli": "^3.3.10"
+  }
+}

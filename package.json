@@ -4,7 +4,8 @@
   "description": "webpack starter-kit",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production"
+    "developer": "webpack --config webpack.config.js",
+    "production": "webpack --config webpack.config.production.js"
   },
   "repository": {
     "type": "git",

@@ -23,7 +23,7 @@ module.exports = {
                 'googlebot': 'index, follow'
             },
             'title': 'Webpack Starter-Kit',
-            template: 'src/template.html'
+            template: 'src/templates/template.html'
         })
     ],
     devServer: {

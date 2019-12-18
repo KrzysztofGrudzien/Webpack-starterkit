@@ -25,5 +25,8 @@ module.exports = {
             'title': 'Webpack Starter-Kit',
             template: 'src/template.html'
         })
-    ]
+    ],
+    devServer: {
+        open: true
+    }
 }

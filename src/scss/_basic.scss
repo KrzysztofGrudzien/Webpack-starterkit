@@ -12,7 +12,7 @@ html {
 
 body {
     border: solid 20px $white;
-    background-color: rgb(17, 124, 71);
+    background-color: $green;
     color: $white;
     font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 100vh;
@@ -42,14 +42,14 @@ body {
         }
     }
 
-    &__logo {
-        background-image: url('./../assets/images/icon-webpack.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 300px;
-        width: 50%;
-    }
+    // &__logo {
+    //     background-image: url('./../assets/images/icon-webpack.png');
+    //     background-size: contain;
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+    //     height: 300px;
+    //     width: 50%;
+    // }
 
     &__description {
         padding: 20px;

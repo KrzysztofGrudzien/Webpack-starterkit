@@ -29,14 +29,16 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.css$/,
-                use: ['style-loader', 'css-loader', {
-                    loader: 'postcss-loader', options: {
-                        plugins: [
-                            require('autoprefixer')
-                        ]
-                    }
-                }
+                test: /\.(sa|sc|c|)ss$/,
+                use: ['style-loader', 'css-loader',
+                    {
+                        loader: 'postcss-loader', options: {
+                            plugins: [
+                                require('autoprefixer')
+                            ]
+                        }
+                    },
+                    'sass-loader'
                 ]
 
                 // {

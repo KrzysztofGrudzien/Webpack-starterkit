@@ -26,6 +26,40 @@ module.exports = {
             template: 'src/templates/template.html'
         })
     ],
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader', {
+                    loader: 'postcss-loader', options: {
+                        plugins: [
+                            require('autoprefixer')
+                        ]
+                    }
+                }
+                ]
+
+                // {
+                //     loader: 'style-loader'
+                // },
+                // {
+                //     loader: 'css-loader',
+                //     options: {
+                //         sourceMap: true,
+                //         url: true
+                //     }
+                // },
+                // {
+                //     loader: 'postcss-loader',
+                //     options: {
+                //         plugins: [
+                //             require('autoprefixer')
+                //         ]
+                //     }
+                // },
+            },
+        ],
+    },
     devServer: {
         open: true,
         contentBase: path.resolve(__dirname, '../', 'public')

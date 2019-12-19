@@ -1,7 +1,6 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     mode: 'development',
@@ -9,7 +8,7 @@ module.exports = {
         build: './src/index.js'
     },
     output: {
-        filename: 'js/[name].[contenthash:8].js',
+        filename: 'js/[name].js',
         path: path.resolve(__dirname, '../', 'dist')
     },
     plugins: [
@@ -27,26 +26,26 @@ module.exports = {
             template: 'src/templates/template.html'
         }),
         new MiniCssExtractPlugin({
-            filename: 'css/[name].[contenthash:8].css'
+            filename: 'css/[name].css'
         }),
     ],
     module: {
         rules: [
             {
                 test: /\.(sa|sc|c|)ss$/,
-                use: [MiniCssExtractPlugin.loader, 'css-loader',
-                {
-                    loader: 'postcss-loader', options: {
-                        plugins: [
-                            require('autoprefixer')
-                        ]
+                use: ['style-loader', 'css-loader',
+                    {
+                        loader: 'postcss-loader', options: {
+                            plugins: [
+                                require('autoprefixer')
+                            ]
+                        }
+                    },
+                    {
+                        loader: 'sass-loader', options: {
+                            sourceMap: true
+                        }
                     }
-                },
-                {
-                    loader: 'sass-loader', options: {
-                        sourceMap: true
-                    }
-                }
                 ]
             },
         ],

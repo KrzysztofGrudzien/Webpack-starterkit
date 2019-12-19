@@ -24,10 +24,7 @@ module.exports = {
             },
             'title': 'Webpack Starter-Kit',
             template: 'src/templates/template.html'
-        }),
-        new MiniCssExtractPlugin({
-            filename: 'css/[name].css'
-        }),
+        })
     ],
     module: {
         rules: [

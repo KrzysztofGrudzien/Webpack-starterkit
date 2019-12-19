@@ -45,6 +45,10 @@ module.exports = {
                     }
                 ]
             },
+            {
+                test: /\.(png|jpg|jpeg|gif|svg)$/,
+                use: 'file-loader'
+            }
         ],
     },
     devServer: {

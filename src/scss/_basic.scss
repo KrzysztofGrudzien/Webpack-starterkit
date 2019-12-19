@@ -42,14 +42,14 @@ body {
         }
     }
 
-    // &__logo {
-    //     background-image: url('./../assets/images/icon-webpack.png');
-    //     background-size: contain;
-    //     background-repeat: no-repeat;
-    //     background-position: center;
-    //     height: 300px;
-    //     width: 50%;
-    // }
+    &__logo {
+        background-image: url('../../public/images/icon-webpack.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 300px;
+        width: 50%;
+    }
 
     &__description {
         padding: 20px;

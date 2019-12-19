@@ -1,6 +1,7 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     mode: 'development',
@@ -8,7 +9,7 @@ module.exports = {
         build: './src/index.js'
     },
     output: {
-        filename: '[name].[contenthash:8].js',
+        filename: 'js/[name].[contenthash:8].js',
         path: path.resolve(__dirname, '../', 'dist')
     },
     plugins: [
@@ -24,41 +25,29 @@ module.exports = {
             },
             'title': 'Webpack Starter-Kit',
             template: 'src/templates/template.html'
-        })
+        }),
+        new MiniCssExtractPlugin({
+            filename: 'css/[name].[contenthash:8].css'
+        }),
     ],
     module: {
         rules: [
             {
                 test: /\.(sa|sc|c|)ss$/,
-                use: ['style-loader', 'css-loader',
-                    {
-                        loader: 'postcss-loader', options: {
-                            plugins: [
-                                require('autoprefixer')
-                            ]
-                        }
-                    },
-                    'sass-loader'
+                use: [MiniCssExtractPlugin.loader, 'css-loader',
+                {
+                    loader: 'postcss-loader', options: {
+                        plugins: [
+                            require('autoprefixer')
+                        ]
+                    }
+                },
+                {
+                    loader: 'sass-loader', options: {
+                        sourceMap: true
+                    }
+                }
                 ]
-
-                // {
-                //     loader: 'style-loader'
-                // },
-                // {
-                //     loader: 'css-loader',
-                //     options: {
-                //         sourceMap: true,
-                //         url: true
-                //     }
-                // },
-                // {
-                //     loader: 'postcss-loader',
-                //     options: {
-                //         plugins: [
-                //             require('autoprefixer')
-                //         ]
-                //     }
-                // },
             },
         ],
     },

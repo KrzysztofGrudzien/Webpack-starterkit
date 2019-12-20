@@ -12,6 +12,7 @@ module.exports = {
         filename: 'js/[name].[contenthash:8].js',
         path: path.resolve(__dirname, '../', 'dist')
     },
+    devtool: 'source-map',
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
@@ -82,6 +83,16 @@ module.exports = {
                         }
                     }
                 ]
+            },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env']
+                    }
+                }
             }
         ],
     }

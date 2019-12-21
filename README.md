@@ -6,20 +6,22 @@ Solve problems for beginner front-end developers. Thanks to that any person can 
 
 ## What does the configuration handles?
 
-|     For development and production environment     |          | 
-|----------------------------------------------------|
-|  it accepts one entry point for the main js file   |
-|  it compiles sass/scss to the css file             |
-|  it adds prefix to the css properties              |
-|  it compiles es6 to the syntax es5                 |
-|  it loads the different graphic files              |
-|  it sets up template of main html file             |
-|----------------------------------------------------|
-
-
-|          For production environment only           | 
-|----------------------------------------------------|
-
+| For development and production environment | For production environment only |
+| ----------- | ----------- |
+| it accepts one entry point for the main js file |
+| it compiles sass/scss to the css file |
+| it adds prefix to the css properties |
+| it compiles es6 to the syntax es5 |
+| it loads the different graphic files |
+| it sets up template of main html file |
+| it fire up devServer |
+| | it compresses css files to small size |
+| | it compresses js files to small size |
+| | it addes polyfill patch for older browsers |
+| | it compresses js files to small size |
+| | it copies files from one to next folder depend on files|
+| | it compresses graphic files to small size |
+| | it uses caching files |
 
 ## What I've used (recommended by webpack)
 - Webpack v4

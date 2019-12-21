@@ -53,6 +53,6 @@ module.exports = {
     },
     devServer: {
         open: true,
-        contentBase: path.resolve(__dirname, '../', 'public')
+        // contentBase: path.resolve(__dirname, '../', 'public')
     }
 }

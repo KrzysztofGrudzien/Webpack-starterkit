@@ -1,5 +1,5 @@
 # Webpack Starter-Kit
-This is my personal Webpack configuration, I've created for different front-end projects. Don't hesitate to improve its configuration and feel free use it for your projects.
+This is my personal Webpack configuration, I've created for different front-end projects. Don't hesitate to improve its configuration, join as a contributor and feel free use it for your projects 😉
 
 ## The aim of this project 🚀
 Solve problems for beginner front-end developers. Thanks to that any person can build small and medium projects using different technologies and tools. At more everybody can develop this project, change configuration and set up for itself project.
@@ -55,6 +55,14 @@ Solve problems for beginner front-end developers. Thanks to that any person can 
 ## Commands - after the instalation
 It's very easy for you because I prepared only 3.
 
-* npm start – to start with development but using devServer (recommended for you)
-* npm run developer - to start with development
-* npm run production - to make it ready for production (recommended when we complete - for example a chunk of project or all)
+### Start Developer Config with Dev Server - (recommended for you)
+
+``npm start``
+
+### Start Developer Config without Dev Server
+
+``npm run developer``
+
+### Start Production Config - (recommended when you complete - for example a chunk of project or all project)
+
+``npm run production``

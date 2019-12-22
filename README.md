@@ -15,6 +15,7 @@ Solve problems for beginner front-end developers. Thanks to that any person can 
 | it loads the different graphic files |
 | it sets up template of main html file |
 | it fire up devServer |
+| it builds source-map |
 | | it compresses css files to small size |
 | | it compresses js files to small size |
 | | it addes polyfill patch for older browsers |
@@ -44,3 +45,16 @@ Solve problems for beginner front-end developers. Thanks to that any person can 
 - webpack-dev-server
 - @babel/polyfill
 - core-js 
+
+## What you should do first
+- [x] Clone Repo
+- [x] Run npm install in the terminal
+- [x] Write appropiate commands (were wrote below)
+
+
+## Commands - after the instalation
+It's very easy for you because I prepared only 3.
+
+> npm start – to start with development but using devServer (recommended for you)
+> npm run developer - to start with development
+> npm run production - to make it ready for production (recommended when we complete - for example a chunk of project or all)

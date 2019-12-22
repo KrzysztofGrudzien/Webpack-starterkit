@@ -55,6 +55,6 @@ Solve problems for beginner front-end developers. Thanks to that any person can 
 ## Commands - after the instalation
 It's very easy for you because I prepared only 3.
 
-> npm start – to start with development but using devServer (recommended for you)
-> npm run developer - to start with development
-> npm run production - to make it ready for production (recommended when we complete - for example a chunk of project or all)
+* npm start – to start with development but using devServer (recommended for you)
+* npm run developer - to start with development
+* npm run production - to make it ready for production (recommended when we complete - for example a chunk of project or all)
